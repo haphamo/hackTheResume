@@ -63,7 +63,8 @@ export const data = {
       "endDate": "2013-01-01",
       "gpa": "4.0",
       "courses": [
-        "DB1101 - Basic SQL"
+        "DB1101 - Basic SQL",
+        "JS1021 - Int Javascript"
       ]
     }],
     "awards": [{
