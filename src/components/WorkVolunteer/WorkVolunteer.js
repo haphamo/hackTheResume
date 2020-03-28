@@ -45,7 +45,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
     
     return(
     <div className={`${section}-container`} style={styles.outerContainer}>
-      <div className="header" style={{textTransform: "uppercase"}}>{section} Experience</div>
+      <div className="header">{section} Experience</div>
         {allWork}
     </div>
   )
