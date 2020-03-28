@@ -13,7 +13,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
     // in each work element, get all highlights
     const allHighlights = work.highlights.map(highlight => {
       return(
-        <div key={uuid()} className="single-highlight"> • {highlight}</div>
+        <div key={uuid()} className="highlight"> • {highlight}</div>
       )
     })
 
@@ -26,8 +26,9 @@ export default function WorkOrVoluneeterCard({ section, color }) {
         {work.company && <div className='company'>{work.company}</div>}
         <div className="timeline">{work.startDate} - {work.endDate}</div>
         <div className="website"><a href={work.website}>{work.website}</a></div>
-        <div className="summary">{work.summary}</div>
-        {allHighlights}
+        <div className="summary">Summary: {work.summary}</div>
+        <div className="highlights">{allHighlights}</div>
+        
       </div>
     )
   })

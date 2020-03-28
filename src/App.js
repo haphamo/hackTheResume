@@ -4,6 +4,8 @@ import './App.css';
 import WorkOrVoluneeterCard from './components/WorkVolunteer/WorkVolunteer'
 import Education from './components/Education/Education'
 
+// To-do Calculate time at each company
+// date formatting
 
 function App() {
 
