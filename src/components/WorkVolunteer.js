@@ -1,5 +1,5 @@
 import React from 'react';
-import { data } from '../../resume.json.js';
+import { data } from '../resume.json.js';
 import { uuid } from 'uuidv4'
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { data } from './resume.json.js'
 import './App.css';
-import WorkOrVoluneeterCard from './components/WorkVolunteer/WorkVolunteer'
-import Education from './components/Education/Education'
+import WorkOrVoluneeterCard from './components/WorkVolunteer'
+import Education from './components/Education'
 
 // To-do Calculate time at each company
 // date formatting
