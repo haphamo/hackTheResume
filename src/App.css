@@ -20,6 +20,15 @@
 .education-container {
   background-color: lightseagreen;
 }
+.awards-container {
+  background-color: lightyellow;
+}
+.publications-container {
+  background-color: lightsalmon;
+}
+.languages-container {
+  background-color: rgb(173, 99, 233);
+}
 
 a {
   cursor: pointer;

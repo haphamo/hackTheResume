@@ -12,8 +12,8 @@ export default function FlatCard({ section }) {
     return(
       <div className={`section ${section}`} key={uuid()}>
         <div>{title}</div>
-        <div>{language}</div>
-        <div>{fluency}</div>
+        {language && <div>{language}: {fluency}</div>}
+      
         <div>{date}</div>
         <div>{awarder}</div>
         <div>{name}</div>

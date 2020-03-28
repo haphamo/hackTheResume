@@ -68,9 +68,9 @@ export const data = {
       ]
     }],
     "awards": [{
-      "title": "Award",
+      "title": "Some Award",
       "date": "2014-11-01",
-      "awarder": "Company",
+      "awarder": "Company A",
       "summary": "There is no spoon."
     }],
     "publications": [{
@@ -91,6 +91,9 @@ export const data = {
     }],
     "languages": [{
       "language": "English",
+      "fluency": "Native speaker"
+    }, {
+      "language": "Vietnamese",
       "fluency": "Native speaker"
     }],
     "interests": [{
