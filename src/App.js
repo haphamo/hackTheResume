@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="container">
     {/* two components left and right sides */}
-      <WorkOrVoluneeterCard color="pink" section="work"/>
-      <WorkOrVoluneeterCard color="lightblue" section="volunteer"/>
+      <WorkOrVoluneeterCard section="work"/>
+      <WorkOrVoluneeterCard section="volunteer"/>
       <Education section="education"/>
     </div>
   );

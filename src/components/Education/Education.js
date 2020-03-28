@@ -7,12 +7,13 @@ export default function Education({ section }) {
   const allEducation = educationData.map(education => {
     
     return(
-      <div className={`${section}`} key={uuid()}>
+      <div className="section" key={uuid()}>
         <div>{education.institution}</div>
         <div>{education.area}</div>
         <div>{education.studyType}</div>
         <div>{education.startDate} | {education.endDate}</div>
-        <div></div>
+        <div>{education.gpa}</div>
+        <div>{education.gpa}</div>
       </div>
     )
   })

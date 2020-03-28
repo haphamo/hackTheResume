@@ -5,15 +5,7 @@ import { uuid } from 'uuidv4'
 
 export default function WorkOrVoluneeterCard({ section, color }) {
   const findData = data[section]
-  const styles = {
-    outerContainer: {
-      backgroundColor: `${color}`,
-      margin: '1em'
-    },
-    innerContainer: {
-      margin: '1em'
-    }
-  }
+
 
   // map through array of work/volunteer to get all work/volunteer history
   const allWork = findData.map(work => {
@@ -27,7 +19,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
 
     // below return one work/volunteer element
     return(
-      <div className={`${section}`} style={styles.innerContainer} key={uuid()}>
+      <div className="section" key={uuid()}>
         <div className='position'>{work.position}</div>
         {/* conditional logic for company/org */}
         {work.organization && <div className='organization'>{work.organization}</div>}
@@ -41,7 +33,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
   })
     
     return(
-    <div className={`${section}-container`} style={styles.outerContainer}>
+    <div className={`${section}-container`}>
       <div className="header">{section} Experience</div>
         {allWork}
     </div>
