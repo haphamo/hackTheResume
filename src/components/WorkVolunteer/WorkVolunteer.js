@@ -18,8 +18,6 @@ export default function WorkOrVoluneeterCard({ section, color }) {
   // map through array of work/volunteer to get all work/volunteer history
   const allWork = findData.map(work => {
 
-    const labels = Object.keys(work)
-    const [ company, organization, position, website, summary, highlights] = labels
     // in each work element, get all highlights
     const allHighlights = work.highlights.map(highlight => {
       return(
@@ -30,13 +28,13 @@ export default function WorkOrVoluneeterCard({ section, color }) {
     // below return one work/volunteer element
     return(
       <div className={`${section}`} style={styles.innerContainer} key={uuid()}>
-        <div className={position}>{work.position}</div>
+        <div className='position'>{work.position}</div>
         {/* conditional logic for company/org */}
-        {work.organization && <div className={`${organization}`}>{work.organization}</div>}
-        {work.company && <div className={`${company}`}>{work.company}</div>}
+        {work.organization && <div className='organization'>{work.organization}</div>}
+        {work.company && <div className='company'>{work.company}</div>}
         <div className="timeline">{work.startDate} - {work.endDate}</div>
-        <div className={`${website}`}>{work.website}</div>
-        <div className={`${summary}`}>{work.summary}</div>
+        <div className="website">{work.website}</div>
+        <div className="summary">{work.summary}</div>
         {allHighlights}
       </div>
     )

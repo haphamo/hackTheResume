@@ -7,7 +7,6 @@ import Education from './components/Education/Education'
 
 function App() {
 
-
   return (
     <div className="container">
     {/* two components left and right sides */}
