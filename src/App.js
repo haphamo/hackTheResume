@@ -1,10 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import { data } from './resume.json.js'
 import './App.css';
+import Card from './components/Card/index'
 
 function App() {
+  const { name, label, picture, email, phone, website, summary, location } = data.basics
   return (
-   <h1>Hello World</h1>
+    <div className="container">
+    {/* two components left and right sides */}
+      <Card />
+    </div>
   );
 }
 
