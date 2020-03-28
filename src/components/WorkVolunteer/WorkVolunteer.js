@@ -25,7 +25,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
         {work.organization && <div className='organization'>{work.organization}</div>}
         {work.company && <div className='company'>{work.company}</div>}
         <div className="timeline">{work.startDate} - {work.endDate}</div>
-        <div className="website">{work.website}</div>
+        <div className="website"><a href={work.website}>{work.website}</a></div>
         <div className="summary">{work.summary}</div>
         {allHighlights}
       </div>

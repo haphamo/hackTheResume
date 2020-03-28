@@ -13,7 +13,7 @@ export default function Education({ section }) {
         <div>{education.studyType}</div>
         <div>{education.startDate} | {education.endDate}</div>
         <div>{education.gpa}</div>
-        <div>{education.gpa}</div>
+        
       </div>
     )
   })
