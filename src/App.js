@@ -1,14 +1,18 @@
 import React from 'react';
 import { data } from './resume.json.js'
 import './App.css';
-import Card from './components/Card/index'
+import WorkOrVoluneeterCard from './components/WorkVolunteer/index'
+
+
 
 function App() {
-  const { name, label, picture, email, phone, website, summary, location } = data.basics
+  const { basics, work, volunteer, education, awards, publications, skills, languages, interests, references } = data
   return (
     <div className="container">
     {/* two components left and right sides */}
-      <Card />
+      <WorkOrVoluneeterCard color="pink" section="work"/>
+      <WorkOrVoluneeterCard color="grey" section="volunteer"/>
+ 
     </div>
   );
 }
