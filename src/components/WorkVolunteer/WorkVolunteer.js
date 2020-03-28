@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { data } from '../../resume.json.js';
 import { uuid } from 'uuidv4'
 
@@ -8,7 +8,6 @@ export default function WorkOrVoluneeterCard({ section, color }) {
   const styles = {
     outerContainer: {
       backgroundColor: `${color}`,
-      fontFamily: "Roboto, sans-serif",
       margin: '1em'
     },
     innerContainer: {
@@ -30,7 +29,7 @@ export default function WorkOrVoluneeterCard({ section, color }) {
 
     // below return one work/volunteer element
     return(
-      <div className={`all-${section}`} style={styles.innerContainer} key={uuid()}>
+      <div className={`${section}`} style={styles.innerContainer} key={uuid()}>
         <div className={position}>{work.position}</div>
         {/* conditional logic for company/org */}
         {work.organization && <div className={`${organization}`}>{work.organization}</div>}
