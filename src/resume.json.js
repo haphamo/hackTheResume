@@ -21,8 +21,8 @@ export const data = {
       }]
     },
     "work": [{
-      "company": "Company",
-      "position": "President",
+      "company": "Company A",
+      "position": "Software Developer",
       "website": "http://company.com",
       "startDate": "2013-01-01",
       "endDate": "2014-01-01",
@@ -33,8 +33,8 @@ export const data = {
       ]
     },
     {
-      "company": "Company",
-      "position": "President",
+      "company": "Company B",
+      "position": "Full stack Developer",
       "website": "http://company.com",
       "startDate": "2013-01-01",
       "endDate": "2014-01-01",
