@@ -1,6 +1,6 @@
 import React from 'react';
 import { data } from '../resume.json.js';
-import { uuid } from 'uuidv4'
+import { uuid } from 'uuidv4';
 
 export default function Education({ section }) {
   const educationData = data[section]
