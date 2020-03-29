@@ -5,11 +5,11 @@ import { uuid } from 'uuidv4'
 // This component handles work, volunteer and education because of their similar data structure
 export default function WVECard({ section, innerArr }) {
   // get work/volunteer/education section in data.
-  // findData is an array of objects
-  const findData = data[section]
+  // dataSet is an array of objects
+  const dataSet = data[section]
 
   // map through array to get the individual entries of each section
-  const allSectionData = findData.map(entry => {
+  const allSectionData = dataSet.map(entry => {
 
     // obj destructuring for keys in the work, volunteer and education category
     const { company, organization, position, website, startDate, endDate, summary, institution, area, studyType, gpa } = entry
