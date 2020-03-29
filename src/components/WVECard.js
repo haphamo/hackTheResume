@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { data } from '../resume.json.js';
 import { uuid } from 'uuidv4'
 
@@ -24,17 +24,25 @@ export default function WVECard({ section, innerArr }) {
     // below return one work/volunteer/education element
     return(
       <div className="section" key={uuid()}>
-        <div className='institution'>{institution}</div>
-        <div className='area'>{area}</div>
-        <div className='studyType'>{studyType}</div>
-        <div className='gpa'>{gpa}</div>
+        {section === "education" && 
+          <Fragment>
+            <div className='institution'>{institution}</div>
+            <div className='area'>{area}</div>
+            <div className='studyType'>{studyType}</div>
+            <div className='gpa'>{gpa}</div>
+          </Fragment>
+        }
         <div className='position'>{position}</div>
         {/* it's org key in volunteer or company in work*/}
-        {entry.organization && <div className="organization">{organization}</div>}
-        {entry.company && <div className="company">{company}</div>}
+        {section === "volunteer" && <div className="organization">{organization}</div>}
+        {section === "work" && <div className="company">{company}</div>}
         <div className="timeline">{startDate} - {endDate}</div>
-        <div className="website"><a href={entry.website}>{website}</a></div>
-        <div className="summary">Summary: {summary}</div>
+        {(section === "work" || section === "volunteer") && 
+          <Fragment>
+            <div className="website"><a href={website}>{website}</a></div>
+            <div className="summary">Summary: {summary}</div>
+          </Fragment>
+        }
         <div className={`all ${innerArr}`}>{nestedData}</div>
         
       </div>
