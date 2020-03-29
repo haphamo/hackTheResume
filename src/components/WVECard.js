@@ -2,8 +2,8 @@ import React from 'react';
 import { data } from '../resume.json.js';
 import { uuid } from 'uuidv4'
 
-
-export default function WorkOrVoluneeterCard({ section, innerArr }) {
+// This component handles work, volunteer and education because of their similar data structure
+export default function WVECard({ section, innerArr }) {
   // get work/volunteer/education section in data.
   // findData is an array of objects
   const findData = data[section]

@@ -2,7 +2,7 @@ import React from 'react';
 import { data } from '../resume.json';
 import { uuid } from 'uuidv4';
 
-export default function FlatCard({ section }) {
+export default function RALPCard({ section }) {
 
   const dataSet = data[section] // array of obj
   

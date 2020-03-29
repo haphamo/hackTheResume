@@ -1,26 +1,25 @@
 import React from 'react';
 import { data } from './resume.json.js'
 import './App.css';
-import WorkOrVoluneeterCard from './components/WorkVolunteer'
-import Education from './components/Education'
-import FlatCard from './components/FlatCard'
+import WVECard from './components/WVECard'
+import RALPCard from './components/RALPCard'
 
 // To-do Calculate time at each company
 // date formatting
+// layout formatting
 
 function App() {
-
+// WVE => Work, Volunteer, Education
+// RALP => Ref, Awards, Languages, Publications
   return (
     <div className="container">
-    {/* two components left and right sides */}
-      <WorkOrVoluneeterCard section="work" innerArr="highlights"/>
-      <WorkOrVoluneeterCard section="volunteer" innerArr="highlights"/>
-      <WorkOrVoluneeterCard section="education" innerArr="courses"/>
-
-      <FlatCard section="awards"/>
-      <FlatCard section="publications"/>
-      <FlatCard section="languages"/>
-      <FlatCard section="references"/>
+      <WVECard section="work" innerArr="highlights"/>
+      <WVECard section="volunteer" innerArr="highlights"/>
+      <WVECard section="education" innerArr="courses"/>
+      <RALPCard section="awards"/>
+      <RALPCard section="publications"/>
+      <RALPCard section="languages"/>
+      <RALPCard section="references"/>
     </div>
   );
 }
