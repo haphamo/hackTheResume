@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { data } from '../resume.json';
 import { uuid } from 'uuidv4';
 
@@ -10,7 +10,7 @@ export default function RALPCard({ section }) {
   // map through array to get the individual entries of each section
   const allSectionData = dataSet.map(entry => {
     // obj destructuring for all values from RALP sections
-    const { title, date, awarder, summary, language, fluency, name, publisher, releaseDate, website } = entry
+    const { title, date, awarder, summary, language, fluency, name, publisher, releaseDate, website, email, phone } = entry
 
     return(
       <div className={`section ${section}`} key={uuid()}>
@@ -23,6 +23,12 @@ export default function RALPCard({ section }) {
         <div>{releaseDate}</div>
         <div>{website}</div>
         <div>{summary}</div>
+        {section === "references" && <Fragment> 
+                                      <div>{email}</div>
+                                      <div>{phone}</div>
+                                    </Fragment>}
+       
+       
       </div>
     )
   })

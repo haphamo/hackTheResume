@@ -105,6 +105,7 @@ export const data = {
     }],
     "references": [{
       "name": "Jane Doe",
-      "reference": "Reference..."
+      "email": "janedoe@gmail.com",
+      "phone": "905-123-4567"
     }]
   }
