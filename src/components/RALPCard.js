@@ -3,10 +3,13 @@ import { data } from '../resume.json';
 import { uuid } from 'uuidv4';
 
 export default function RALPCard({ section }) {
+  // get references, awards, languages and publications section in data.
+  // findData is an array of objects
 
-  const dataSet = data[section] // array of obj
-  
+  const dataSet = data[section]
+  // map through array to get the individual entries of each section
   const allSectionData = dataSet.map(entry => {
+    // obj destructuring for all values from RALP sections
     const { title, date, awarder, summary, language, fluency, name, publisher, releaseDate, website } = entry
 
     return(
