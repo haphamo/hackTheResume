@@ -15,7 +15,7 @@ function App() {
 // RALP => Ref, Awards, Languages, Publications
   return (
     <div className="container">
-      <Basics />
+      <Basics section="basics"/>
       <WVECard section="work" innerArr="highlights"/>
       <WVECard section="volunteer" innerArr="highlights"/>
       <WVECard section="education" innerArr="courses"/>

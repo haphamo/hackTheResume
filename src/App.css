@@ -10,27 +10,7 @@
 .section {
   padding: 0em 1em 1em 1em;
 }
-/* .work-container {
-  background-color: pink;
-}
-.volunteer-container {
-  background-color: lightblue;
-}
-.education-container {
-  background-color: lightseagreen;
-}
-.awards-container {
-  background-color: lightyellow;
-}
-.publications-container {
-  background-color: lightsalmon;
-}
-.languages-container {
-  background-color: rgb(212, 183, 235);
-}
-.references-container {
-  background-color: rgb(156, 52, 52);
-} */
+
 .container {
   background-color: lightsteelblue;
   border-radius: 1em;

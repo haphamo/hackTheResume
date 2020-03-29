@@ -6,6 +6,7 @@ import { uuid } from 'uuidv4'
 export default function WVECard({ section, innerArr }) {
   // get work/volunteer/education section in data.
   // dataSet is an array of objects
+
   const dataSet = data[section]
 
   // map through array to get the individual entries of each section
@@ -44,7 +45,6 @@ export default function WVECard({ section, innerArr }) {
           </Fragment>
         }
         <div className={`all ${innerArr}`}>{nestedData}</div>
-        
       </div>
     )
   })
