@@ -29,6 +29,9 @@
 .languages-container {
   background-color: rgb(212, 183, 235);
 }
+.references-container {
+  background-color: rgb(156, 52, 52);
+}
 
 a {
   cursor: pointer;
