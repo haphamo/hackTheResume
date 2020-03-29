@@ -3,7 +3,7 @@ import { data } from './resume.json.js'
 import './App.css';
 import WVECard from './components/WVECard';
 import RALPCard from './components/RALPCard';
-import Basics from './components/Basics';
+import BasicsCard from './components/BasicsCard';
 
 
 // To-do Calculate time at each company
@@ -15,10 +15,11 @@ function App() {
 // RALP => Ref, Awards, Languages, Publications
   return (
     <div className="container">
-      <Basics section="basics"/>
+      <BasicsCard section="basics"/>
       <WVECard section="work" innerArr="highlights"/>
       <WVECard section="volunteer" innerArr="highlights"/>
       <WVECard section="education" innerArr="courses"/>
+      <WVECard section="skills" innerArr="keywords"/>
       <RALPCard section="awards"/>
       <RALPCard section="publications"/>
       <RALPCard section="languages"/>

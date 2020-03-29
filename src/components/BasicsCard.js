@@ -14,18 +14,23 @@ export default function Basics({ section }) {
   // console.log('here:', data[section].profiles)
 
   return(
-    <div className={section}>
-      <div>{name}</div>
-      <div>{label}</div>
-      <div>{summary}</div>
-      <div>{email}</div>
-      <div>{website}</div>
-      <div>{address}</div>
-      <div>{postalCode}</div>
-      <div>{city}</div>
-      <div>{countryCode}</div>
-      <div>{region}</div>
+    <div className={`${section} container`}>
+      <div className="header">{section}</div>
+      <div className="section">
+        <div>{name}</div>
+        <div>{label}</div>
+        <div>{summary}</div>
+        <div>{email}</div>
+        <div>{website}</div>
+        <div>{address}</div>
+        <div>{postalCode}</div>
+        <div>{city}</div>
+        <div>{countryCode}</div>
+        <div>{region}</div>
+      </div>
       <RALPCard section="profiles"/>
+
+  
     </div>
   )
 }
