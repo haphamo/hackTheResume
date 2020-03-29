@@ -30,8 +30,8 @@ export default function WVECard({ section, innerArr }) {
         <div className='gpa'>{gpa}</div>
         <div className='position'>{position}</div>
         {/* it's org key in volunteer or company in work*/}
-        {entry.organization && <div className='organization'>{organization}</div>}
-        {entry.company && <div className='company'>{company}</div>}
+        {entry.organization && <div className="organization">{organization}</div>}
+        {entry.company && <div className="company">{company}</div>}
         <div className="timeline">{startDate} - {endDate}</div>
         <div className="website"><a href={entry.website}>{website}</a></div>
         <div className="summary">Summary: {summary}</div>
