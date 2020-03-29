@@ -13,9 +13,10 @@ function App() {
   return (
     <div className="container">
     {/* two components left and right sides */}
-      <WorkOrVoluneeterCard section="work"/>
-      <WorkOrVoluneeterCard section="volunteer"/>
-      <Education section="education"/>
+      <WorkOrVoluneeterCard section="work" innerArr="highlights"/>
+      <WorkOrVoluneeterCard section="volunteer" innerArr="highlights"/>
+      <WorkOrVoluneeterCard section="education" innerArr="courses"/>
+
       <FlatCard section="awards"/>
       <FlatCard section="publications"/>
       <FlatCard section="languages"/>
