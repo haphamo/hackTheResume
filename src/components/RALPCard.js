@@ -14,27 +14,39 @@ export default function RALPCard({ section }) {
 
     return(
       <div className={`section ${section}`} key={uuid()}>
-        <div>{title}</div>
-        {language && <div>{language}: {fluency}</div>}
-        <div>{date}</div>
-        <div>{awarder}</div>
-        <div>{name}</div>
-        <div>{publisher}</div>
-        <div>{releaseDate}</div>
-        <div>{website}</div>
-        <div>{summary}</div>
-        {section === "references" && <Fragment> 
-                                      <div>{email}</div>
-                                      <div>{phone}</div>
-                                    </Fragment>}
-       
+        {section === "awards" && 
+          <Fragment>
+             <div>{title}</div>
+             <div>{date}</div>
+             <div>{awarder}</div>
+             <div>{summary}</div>
+          </Fragment>
+        }
+
+        {section === "publications" &&
+          <Fragment>
+            <div>{name}</div>
+            <div>{publisher}</div>
+            <div>{releaseDate}</div>
+            <div>{website}</div>
+            <div>{summary}</div>
+          </Fragment>
+        }
+        {section === "languages" && <div>{language}: {fluency}</div>}
+
+        {section === "references" && 
+          <Fragment> 
+            <div>{email}</div>
+            <div>{phone}</div>
+          </Fragment>}
+
        
       </div>
     )
   })
 
   return(
-    <div className={`${section}-container`}>
+    <div className={`${section} container`}>
       <div className="header">{section}</div>
       {allSectionData}
     </div>

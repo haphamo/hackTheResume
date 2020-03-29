@@ -35,14 +35,14 @@ export default function WVECard({ section, innerArr }) {
         <div className="timeline">{startDate} - {endDate}</div>
         <div className="website"><a href={entry.website}>{website}</a></div>
         <div className="summary">Summary: {summary}</div>
-        <div className={`${innerArr}-container`}>{nestedData}</div>
+        <div className={`all ${innerArr}`}>{nestedData}</div>
         
       </div>
     )
   })
   
     return(
-    <div className={`${section}-container`}>
+    <div className={`${section} container`}>
       <div className="header">{section} Experience</div>
         {allSectionData}
     </div>
