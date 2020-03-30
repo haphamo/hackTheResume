@@ -60,7 +60,8 @@ export default function WVECard({ section, innerArr }) {
   
     return(
     <div className={`${section} container`}>
-      <div className="header">{section} Experience</div>
+      {/* Work and volunteer sections have EXPERIENCE SUFFIX */}
+      <div className="header">{section} {(section === "work" || section === "volunteer") && ("Experience")}</div>
         {allSectionData}
     </div>
   )
