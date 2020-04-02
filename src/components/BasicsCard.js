@@ -17,16 +17,16 @@ export default function Basics({ section }) {
       {!(section === "basics" || section === "profiles") && <div className="header">{section}</div>}
       <div className="section">
         {picture && <img id="user-img" alt="avatar" src={picture}></img>}
-        <div>{name}</div>
-        <div>{label}</div>
-        <div>{summary}</div>
-        <div>{email}</div>
-        <div>{website}</div>
-        <div>{address}</div>
-        <div>{postalCode}</div>
-        <div>{city}</div>
-        <div>{countryCode}</div>
-        <div>{region}</div>
+        <div className="name">{name}</div>
+        <div className="label">{label}</div>
+        <div className="summary">{summary}</div>
+        <div className="email">{email}</div>
+        <div className="website">{website}</div>
+        <div className="address">{address}</div>
+        <div className="postalCode">{postalCode}</div>
+        <div className="city">{city}</div>
+        <div className="countryCode">{countryCode}</div>
+        <div className="region">{region}</div>
       </div>
       <RALPCard section="profiles"/>
 
