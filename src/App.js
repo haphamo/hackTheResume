@@ -14,16 +14,22 @@ function App() {
 // WVE => Work, Volunteer, Education
 // RALP => Ref, Awards, Languages, Publications
   return (
-    <div className="container">
-      <BasicsCard section="basics"/>
-      <WVECard section="work" innerArr="highlights"/>
-      <WVECard section="volunteer" innerArr="highlights"/>
-      <WVECard section="education" innerArr="courses"/>
-      <WVECard section="skills" innerArr="keywords"/>
-      <RALPCard section="awards"/>
-      <RALPCard section="publications"/>
-      <RALPCard section="languages"/>
-      <RALPCard section="references"/>
+    <div className="container" style={{display: 'flex'}}>
+      <div className="left-side" style={{backgroundColor: 'lightyellow', flex: 1}}>
+        <BasicsCard section="basics"/> 
+        <WVECard section="skills" innerArr="keywords"/>
+        <RALPCard section="languages"/>
+        <RALPCard section="references"/>
+      </div>
+      <div className="right-side" style={{backgroundColor: 'lightsteelblue', flex: 2}}>
+        <WVECard section="work" innerArr="highlights"/>
+        <WVECard section="volunteer" innerArr="highlights"/>
+        <WVECard section="education" innerArr="courses"/>
+        <RALPCard section="awards"/>
+        <RALPCard section="publications"/>
+
+
+      </div>
     </div>
   );
 }

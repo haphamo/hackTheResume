@@ -1,6 +1,5 @@
 import React from 'react';
 import { data } from '../resume.json.js';
-import { uuid } from 'uuidv4';
 import RALPCard from './RALPCard';
 
 export default function Basics({ section }) {
@@ -15,8 +14,9 @@ export default function Basics({ section }) {
 
   return(
     <div className={`${section} container`}>
-      <div className="header">{section}</div>
+      {!(section === "basics" || section === "profiles") && <div className="header">{section}</div>}
       <div className="section">
+        {picture && <img id="user-img" alt="avatar" src={picture}></img>}
         <div>{name}</div>
         <div>{label}</div>
         <div>{summary}</div>

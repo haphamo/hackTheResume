@@ -2,7 +2,7 @@ export const data = {
     "basics": {
       "name": "John Doe",
       "label": "Programmer",
-      "picture": "",
+      "picture": "https://api.adorable.io/avatars/121/abott@adorable.io.png",
       "email": "john@gmail.com",
       "phone": "(912) 555-4321",
       "website": "http://johndoe.com",
