@@ -1,5 +1,4 @@
 import React from 'react';
-import { data } from './resume.json.js'
 import './App.css';
 import WVECard from './components/WVECard';
 import RALPCard from './components/RALPCard';
@@ -12,7 +11,7 @@ import BasicsCard from './components/BasicsCard';
 
 function App() {
 // WVE => Work, Volunteer, Education
-// RALP => Ref, Awards, Languages, Publications
+// RALP => Ref, Awards, Languages, Publications, Profiles(from Basics)
   return (
     <div className="container" style={{display: 'flex'}}>
       <div className="left-side" style={{backgroundColor: 'lightyellow', flex: 1}}>
@@ -27,8 +26,6 @@ function App() {
         <WVECard section="education" innerArr="courses"/>
         <RALPCard section="awards"/>
         <RALPCard section="publications"/>
-
-
       </div>
     </div>
   );

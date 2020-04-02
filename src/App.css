@@ -5,19 +5,23 @@
 .header {
   text-transform: uppercase;
   padding: 1em;
+  font-size: 1.5em;
 }
 
 .section {
   padding: 0em 1em 1em 1em;
 }
 
-/* .container {
-  background-color: lightsteelblue;
-} */
-
 #user-img {
   border-radius: 50%;
+  padding-top: 1em;
 }
+
+.img-section {
+  display: flex;
+  justify-content: center;
+}
+
 .all {
   padding-left: 1em;
 }
@@ -25,4 +29,12 @@
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.summary {
+  padding: 0.5em 0em 0.5em 0em;
 }

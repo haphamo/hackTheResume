@@ -16,7 +16,7 @@ export default function Basics({ section }) {
     <div className={`${section} container`}>
       {!(section === "basics" || section === "profiles") && <div className="header">{section}</div>}
       <div className="section">
-        {picture && <img id="user-img" alt="avatar" src={picture}></img>}
+        {picture && <div className="img-section"><img id="user-img" alt="avatar" src={picture}></img></div>}
         <div className="name">{name}</div>
         <div className="label">{label}</div>
         <div className="summary">{summary}</div>
