@@ -4,9 +4,9 @@ const bodyParser    = require("body-parser");
 const app           = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.json('Hello World')
 })
  
 app.listen(PORT, () => {
-  console.log("Example app listening on port " + PORT);
+  console.log(Server is running on port: `${PORT}`);
 });
