@@ -2,7 +2,7 @@ export const data = {
     "basics": {
       "name": "John Doe",
       "label": "Programmer",
-      "picture": "",
+      "picture": "https://randomuser.me/api/portraits/lego/1.jpg",
       "email": "john@gmail.com",
       "phone": "(912) 555-4321",
       "website": "http://johndoe.com",
