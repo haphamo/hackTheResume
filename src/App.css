@@ -16,6 +16,7 @@
 #user-img {
   border-radius: 50%;
   padding-top: 1em;
+  max-height: 10em;
 }
 
 .img-section {
@@ -33,10 +34,6 @@ a {
   text-decoration: none;
 }
 
-.name {
-  font-size: 2.5sem;
-}
-
 .summary {
   padding: 0.5em 0em 0.5em 0em;
 }
@@ -50,7 +47,7 @@ a {
 }
 
 .name {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .left-side {
