@@ -22,11 +22,14 @@ export default function Basics({ section }) {
         <div className="summary">{summary}</div>
         <div className="email">{email}</div>
         <div className="website">{website}</div>
-        <div className="address">{address}</div>
-        <div className="postalCode">{postalCode}</div>
-        <div className="city">{city}</div>
-        <div className="countryCode">{countryCode}</div>
-        <div className="region">{region}</div>
+        <div className="full-address"> 
+          <div className="address">{address}</div>
+          <div className="postalCode">{postalCode}</div>
+          <div className="city">{city}</div>
+          <div className="countryCode">{countryCode}</div>
+          <div className="region">{region}</div>
+
+        </div>
       </div>
       <RALPCard section="profiles"/>
 

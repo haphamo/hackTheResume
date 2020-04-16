@@ -6,6 +6,7 @@
   text-transform: uppercase;
   padding: 1em;
   font-size: 1.5em;
+  font-weight: 500;
 }
 
 .section {
@@ -32,9 +33,21 @@ a {
 }
 
 .name {
-  font-size: 2em;
+  font-size: 2.5sem;
 }
 
 .summary {
   padding: 0.5em 0em 0.5em 0em;
+}
+
+.full-address {
+  padding-top: 1em;
+}
+
+.label, .position, .name {
+  font-weight: 700;
+}
+
+.name {
+  font-size: 2em;
 }
