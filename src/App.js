@@ -14,13 +14,13 @@ function App() {
 // RALP => Ref, Awards, Languages, Publications, Profiles(from Basics)
   return (
     <div className="container" style={{display: 'flex'}}>
-      <div className="left-side" style={{backgroundColor: 'lightyellow', flex: 1}}>
+      <div className="left-side" >
         <BasicsCard section="basics"/> 
         <WVECard section="skills" innerArr="keywords"/>
         <RALPCard section="languages"/>
         <RALPCard section="references"/>
       </div>
-      <div className="right-side" style={{backgroundColor: 'lightsteelblue', flex: 2}}>
+      <div className="right-side">
         <WVECard section="work" innerArr="highlights"/>
         <WVECard section="volunteer" innerArr="highlights"/>
         <WVECard section="education" innerArr="courses"/>

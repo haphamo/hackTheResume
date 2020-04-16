@@ -21,6 +21,7 @@
 .img-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 3em;
 }
 
 .all {
@@ -50,4 +51,20 @@ a {
 
 .name {
   font-size: 2em;
+}
+
+.left-side {
+  /* style={{backgroundColor: 'lightyellow', flex: 1}} */
+  background-color: rgb(253, 208, 57);
+  flex: 1;
+}
+
+.right-side {
+  background-color: rgb(255, 255, 255);
+  flex: 2;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
 }

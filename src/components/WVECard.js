@@ -27,22 +27,31 @@ export default function WVECard({ section, innerArr }) {
       <div className="section" key={uuid()}>
         {section === "education" && 
           <Fragment>
-            <div className='institution'>{institution}</div>
+            <div className="top-line">
+              <div className='institution'>{institution}</div>
+              <div className="timeline">{startDate} - {endDate}</div>
+            </div>
             <div className='area'>{area}</div>
             <div className='studyType'>{studyType}</div>
-            <div className="timeline">{startDate} - {endDate}</div>
             <div className='gpa'>{gpa}</div>
           </Fragment>
         }
        
-        {section === "volunteer" && <div className="organization">{organization}</div>}
-        {section === "work" && <div className="company">{company}</div>}
+        {section === "volunteer" && 
+        <div className="top-line">
+          <div className="organization">{organization}</div>
+          <div className="timeline">{startDate} - {endDate}</div>
+        </div>}
+        {section === "work" && 
+          <div className="top-line">
+            <div className="company">{company}</div>
+            <div className="timeline">{startDate} - {endDate}</div>
+          </div>}
         
         {(section === "work" || section === "volunteer") && 
           <Fragment>
             <div className='position'>{position}</div>
             <div className="website"><a href={website}>{website}</a></div>
-            <div className="timeline">{startDate} - {endDate}</div>
             <div className="summary">Summary: {summary}</div>
           </Fragment>
         }
